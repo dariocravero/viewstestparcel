@@ -1,0 +1,34 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# views
+**/view.js
+**/DesignSystem/Fonts/*.js
+src/Data/ViewsData.js
+src/Logic/ViewsFlow.js
+src/Logic/ViewsToolsDesignSystem.js
+src/Logic/useIsBefore.js
+src/Logic/useIsMedia.js
+src/Logic/useIsHovered.js
+src/Logic/ViewsTools.js

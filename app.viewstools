@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "url": "http://localhost:3000",
+  "media": {
+    "base": "laptop",
+    "mobile": {
+      "width": 424,
+      "height": 667
+    },
+    "tablet": {
+      "width": 1024,
+      "height": 768
+    },
+    "laptop": {
+      "width": 1280,
+      "height": 800
+    },
+    "desktop": {
+      "width": 2560,
+      "height": 1600
+    }
+  },
+  "runtime": [
+    {
+      "id": "start:views",
+      "name": "Views Morpher",
+      "command": "yarn start:views --tools",
+      "readyCheck": "Views Morpher is ready",
+      "dependsOn": []
+    },
+    {
+      "id": "start:react",
+      "name": "React",
+      "command": "BROWSER=none yarn start:react",
+      "readyCheck": "(Compiled|Welcome to React Native|Expo DevTools is running)",
+      "dependsOn": ["start:views"]
+    }
+    {
+      "id": "preview",
+      "name": "Preview",
+      "command": "open http://localhost:3000 && echo 'Done'",
+      "readyCheck": "Done",
+      "dependsOn": ["start:react"]
+    }
+  ],
+  "morpherVersion": {
+    "major": 24,
+    "minor": 9,
+    "patch": 1
+  }
+}
