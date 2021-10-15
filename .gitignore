@@ -22,14 +22,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# views
-**/view.js
-**/DesignSystem/Fonts/*.js
-**/DesignSystem/Fonts/*.module.css
-**/*.graphql.js
-**/data.js
-**/view.module.css
-src/Views
-
-.parcel-cache/
+.parcel-cache
 dist
+
+# views
+# **/view.js
+# **/DesignSystem/Fonts/*.js
+# **/DesignSystem/Fonts/*.module.css
+# **/*.graphql.js
+# **/data.js
+# **/view.module.css
+# src/Views
+#

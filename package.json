@@ -13,7 +13,8 @@
     "react-refresh": "0.9.0"
   },
   "scripts": {
-    "start": "concurrently --kill-others npm:start:*",
+    "start": "yarn start:react",
+    "xstart": "concurrently --kill-others npm:start:*",
     "build": "node ~/views/morph/bin.js src --as react-dom && parcel build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",

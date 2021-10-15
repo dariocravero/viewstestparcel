@@ -8,5 +8,5 @@ is together
   justifyContent center
     Text
     fontSize 18
-    color red
-    text Hello Views Tools!
+    color blue
+    text Hello Views Tools!!!

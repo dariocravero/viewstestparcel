@@ -1,0 +1,11 @@
+.Vertical {
+  align-items: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.Text {
+  font-size: 18px;
+  color: red;
+}
